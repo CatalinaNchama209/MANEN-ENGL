@@ -1,0 +1,553 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MANENTECH </title>
+
+  <!-- Inter + FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>Launching MANENTECH…</p>
+  </div>
+
+  <!-- Background canvas (one instance only) -->
+  <canvas id="bg"></canvas>
+
+  <!-- Header -->
+  <header class="site-header">
+    
+     <a href="#home" class="logo">
+      <img src="assets/Capturelog.PNG" alt="MANENTECH logo" class="logo-img">
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <!-- Nav -->
+<nav class="nav">
+  <a href="#home" class="nav-link">Home</a>
+  <a href="#about" class="nav-link">About</a>
+  <a href="#skills" class="nav-link">Skills</a>
+  <a href="#experience" class="nav-link">Experience</a>
+  <a href="#cv" class="nav-link">CV & Resume</a> 
+  <a href="#certificates" class="nav-link">Certificates</a>
+  <a href="#projects" class="nav-link">Projects</a>
+  <a href="#achievements" class="nav-link">Achievements</a>
+  <a href="#contact" class="nav-link cta">Contact</a>
+</nav>
+
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero reveal">
+    <div class="hero-inner">
+      <div class="hero-avatar">
+      
+        <span class="status-badge">Open to Work</span>
+      </div>
+
+      <p class="eyebrow">User Interface and User Experience Designer | Virtual Assistant | Technical Support and IT Infrastructure Specialist </p>
+
+      <h1>
+        Hi, I'm <span class="accent">María Amparo</span><br>
+        Crafting <span class="highlight">Beautiful</span> &
+        <span class="highlight">User-Friendly</span> Digital Experiences
+      </h1>
+
+      <p class="sub">
+        Creative, detail-oriented professional with a strong background in
+        <strong>design</strong>, <strong>technical support</strong>, and
+        <strong>project management</strong>. I turn ideas into engaging,
+        user-centered products that inspire and perform.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn primary pulse">🚀 Let's Collaborate</a>
+        <a href="#projects" class="btn ghost">🎨 View My Work</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/dashboard" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:cndohoebana@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+<!-- About -->
+<section id="about" class="about section reveal">
+  <div class="container about-grid">
+    <!-- Left column (text) -->
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p class="lead">
+        I am a responsible, adaptable person with a positive attitude. 
+        I enjoy helping others, learning continuously, and working as part of a team. 
+        Professionally, I have experience in user interface and user experience design, 
+        virtual assistance, technical support, IT infrastructure, and computer repair. 
+        I am characterized by a practical approach, clear communication, and a strong 
+        orientation toward solutions.
+      </p>
+      <p>
+        With a strong foundation in <strong>Computer Science</strong>, I bring
+        together creativity, problem-solving, and technical expertise. My work
+        spans UI/UX design, IT support, graphic design, and virtual assistance —
+        always focused on efficiency, clarity, and innovation.
+      </p>
+      <p>
+        I have collaborated with teams on academic and professional projects,
+        supported organizations with IT solutions, and designed digital products
+        that improve user experiences. My ability to multitask — from managing
+        schedules as a secretary, to hosting radio shows in Spanish, to delivering
+        fast technical support — demonstrates adaptability across diverse roles.
+      </p>
+      <p>
+        Passionate about growth and impact, I aim to help businesses and teams
+        succeed by combining <strong>technology, design, and organizational skills</strong>.
+        Whether it's building digital platforms, supporting users, or designing
+        creative solutions, I approach every project with dedication and detail.
+      </p>
+
+      <!-- Stats under text -->
+      <div class="about-stats">
+        <div class="stat-card">
+          <h3>3+</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="stat-card">
+          <h3>30+</h3>
+          <p>Completed Projects</p>
+        </div>
+        <div class="stat-card">
+          <h3>2+</h3>
+          <p>Leadership Roles</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column (photo) -->
+    <div class="about-photo">
+      <div class="photo-card">
+        <img src="assets/maria.jpg" alt="Portrait of María Amparo" class="profile-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section reveal">
+  <div class="container">
+    <h2>Skills & Tools</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h3>Skills</h3>
+        <div class="bar" data-skill="Research"></div>
+        <div class="bar" data-skill="problem-solving"></div>
+        <div class="bar" data-skill="IT Troubleshooting & Support"></div>
+        <div class="bar" data-skill="Networking Fundamentals"></div>
+        <div class="bar" data-skill="Responsive Web Design (HTML, CSS, JavaScript)"></div>
+        <div class="bar" data-skill="Android Development (Android Studio)"></div>
+        <div class="bar" data-skill="SEO Awareness"></div>
+        <div class="bar" data-skill="Project Planning & Management"></div>
+        <div class="bar" data-skill="Customer Relations & Communication"></div>
+        <div class="bar" data-skill="Team & Time Management"></div>
+        <div class="bar" data-skill="Adaptability & Creativity"></div>
+        <div class="bar" data-skill="Attention to Detail"></div>
+        <div class="bar" data-skill="Design"></div>
+      </div>
+
+      <div class="card">
+        <h3>Tools</h3>
+        <div class="bar" data-skill="Canva, Figma, CorelDraw, Photoshop"></div>
+        <div class="bar" data-skill="Framer, Webflow"></div>
+        <div class="bar" data-skill="Google Workspace, Trello, Zoom, Asana, Calendly"></div>
+        <div class="bar" data-skill="Microsoft Office Suite"></div>
+        <div class="bar" data-skill="GitHub, Git Bash, Dev++, Visual Studio Code"></div>
+        <div class="bar" data-skill="PowerShell, CMD, Windows Client-Server"></div>
+        <div class="bar" data-skill="VirtualBox, Cisco Packet Tracer"></div>
+        <div class="bar" data-skill="AnyDesk"></div>
+        <div class="bar" data-skill="Android Studio"></div>
+        <div class="bar" data-skill="PostgreSQL"></div>
+         <div class="bar" data-skill="PHP & MySQL"></div>
+        <div class="bar" data-skill="Jupyter Notebook"></div>
+        <div class="bar" data-skill="PuTTY, pgAdmin"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Experience -->
+  <section id="experience" class="section alt reveal">
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <ol class="timeline">
+         <li>
+          <div class="tl-point"></div>
+          <div class="tl-card card">
+            <h3>Graphic Designer • Centre for Comtemporary Pan-Africanism</h3>
+            <p class="muted">Accra, Ghana • 2025</p>
+            <ul class="bullets">
+              <li>Development of visula content for institutional campaigns.</li>
+              <li>Createive design to strengthen the organization's visual identity.</li>
+              <li>Promotion of Pan-African values through digital design.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="tl-point"></div>
+          <div class="tl-card card">
+            <h3>IT Assistant Intern • Valley View University</h3>
+            <p class="muted">Accra, Ghana • Jun 2023 – 2025</p>
+            <ul class="bullets">
+              <li>Provided technical support for staff and students, troubleshooting hardware and software issues.</li>
+              <li>Maintained campus network systems and supported data security.</li>
+              <li>Supported digital platform operations and process improvements.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="tl-point"></div>
+          <div class="tl-card card">
+            <h3>Secretary • Ladies in Tech, Valley View University</h3>
+            <p class="muted">Accra, Ghana • 2024 – 2025</p>
+            <ul class="bullets">
+              <li>Managed administrative tasks, schedules, and communications.</li>
+              <li>Coordinated events/workshops to promote women in technology.</li>
+              <li>Maintained accurate records to ensure smooth operations.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="tl-point"></div>
+          <div class="tl-card card">
+            <h3>Student Representative • Valley View University</h3>
+            <p class="muted">Accra, Ghana • 2024 – 2025</p>
+            <ul class="bullets">
+              <li>Liaison between students and university administration.</li>
+              <li>Representation of academic and extracurricular needs.</li>
+              <li>Participation in decision-making to improve campus life.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="tl-point"></div>
+          <div class="tl-card card">
+            <h3>Radio Presenter • Valley View University</h3>
+            <p class="muted">Accra, Ghana • 2023 – 2025</p>
+            <ul class="bullets">
+              <li>Presentation of a bilingual Spanish radio program.</li>
+              <li>Live interpretation from English to Spanish during interviews and discussions.</li>
+              <li>Translation of educational content.</li>
+              <li>On-air basic Spanish teaching for students and general audiences.</li>
+              <li>Coordination of recordings and scheduling with the technical team.</li>
+              <li>Spanish lessons for children through dynamic and interactive activities.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="tl-point"></div>
+          <div class="tl-card card">
+            <h3>Graphic Designer • International Students Association</h3>
+            <p class="muted">Valley View University • 2022</p>
+            <ul class="bullets">
+              <li>Created promotional materials for events, boosting engagement.</li>
+              <li>Increased student engagement through attractive visual content.</li>
+              <li>Alignment of design concepts with institutional branding.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CV & Resume Section -->
+<section id="cv" class="section reveal">
+  <div class="container">
+    <h2>My CV & Resume</h2>
+    <p class="muted">Download my latest CV and Resume here:</p>
+    <div class="cv-buttons">
+      <a href="assets/cv disenado.pdf" target="_blank" class="btn primary">📄 View CV</a>
+      <a href="assets/Resume of VA.pdf" target="_blank" class="btn ghost">📑 View Resume</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Certificates (NEW, separated) -->
+  <section id="certificates" class="section alt reveal">
+    <div class="container">
+      <h2>Certificates</h2>
+      <div class="edu-grid">
+        <div class="card">
+          <h3>Professional & Technical</h3>
+          <ul class="bullets">
+            <li>Information Technology Infrastructure Library (ITIL)</li>
+            <li>Responsive Web Design</li>
+            <li>Introduction to Cybersecurity Awareness</li>
+            <li>Data Science and Analytics</li>
+            <li>Technical Support Fundamentals</li>
+            <li>The Bits and Bytes of Computer Networking</li>
+            <li>Hands-on Experience with IT Infrastructure</li>
+            <li>Becoming a Power User with Operating System</li>
+             <li>Design Like a Pro: Complete UX and UI Course</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Virtual Assistant & Design</h3>
+          <ul class="bullets">
+            <li>Virtual Assistant — <strong>ALX</strong></li>
+            <li>Virtual Assistant — <strong>Alison</strong></li>
+            <li>Graphic Designer — <strong>Alison</strong></li>
+            <li>Project Writing Seminar</li>
+            <li>Effective Leadership</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Other</h3>
+          <ul class="bullets">
+            <li>Skincare Formulation and Mastery</li>
+            <li>International Student of the Year</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Projects (carousel) -->
+<section id="projects" class="section reveal">
+  <div class="container">
+    <h2>Selected Projects</h2>
+
+    <!-- START: carousel wrapper (no cambios dentro de cada project-card) -->
+    <div class="carousel" id="projects-carousel" aria-label="Projects carousel">
+      <button class="carousel-btn prev" aria-label="Previous project">‹</button>
+
+      <div class="carousel-viewport">
+        <div class="carousel-track">
+          <!-- ALL your project cards go here unchanged -->
+          <article class="project-card" tabindex="0" data-project="p1">
+            <div class="project-media"><img src="assets/picQA.jpg" alt="UniQAMS preview"></div>
+            <div class="project-body"><h3>UniQAMS — Quality Assurance System</h3><p>Accreditation, assessments & auditing via a centralized mobile app.</p></div>
+          </article>
+
+          <article class="project-card" tabindex="0" data-project="p2">
+            <div class="project-media"><img src="assets/colorpic.PNG" alt="Color replacement tool"></div>
+            <div class="project-body"><h3>Color Replacement in Image</h3><p>Upload images and replace colors with instant preview.</p></div>
+          </article>
+
+          <article class="project-card" tabindex="0" data-project="p6">
+            <div class="project-media"><img src="assets/Dog Owner (1).png" alt="Dog Owner App UI"></div>
+            <div class="project-body">
+              <h3>PAWPAL – Dog Owner</h3>
+              <p>Una aplicación diseñada para dueños de perros, que permite gestionar perfiles de mascotas, historiales de vacunación y datos de salud, además de administrar la información personal del usuario.</p>
+            </div>
+          </article>
+
+          <article class="project-card" tabindex="0" data-project="p5">
+            <div class="project-media"><img src="assets/Productos.png" alt="Marketplace UI Design"></div>
+            <div class="project-body">
+              <h3>MANEN Marketplace</h3>
+              <p>Un marketplace digital diseñado para Guinea Ecuatorial, donde usuarios pueden comprar y vender productos como muebles, ropa, coches y electrónicos.</p>
+            </div>
+          </article>
+
+          <article class="project-card" tabindex="0" data-project="va1">
+            <div class="project-media"><img src="assets/VA4.png" alt="VA Scheduling"></div>
+            <div class="project-body"><h3>Email & Calendar Management for Small Business Consultant</h3><p>Automating meetings, reminders, and workflows.</p></div>
+          </article>
+
+          <article class="project-card" tabindex="0" data-project="va2">
+            <div class="project-media"><img src="assets/VA5.jpg" alt="VA Email"></div>
+            <div class="project-body"><h3>VA Project — Email & Task Automation</h3><p>Smart inbox management and task routing.</p></div>
+          </article>
+
+          <article class="project-card" tabindex="0" data-project="va3">
+            <div class="project-media"><img src="assets/VA2.jpg" alt="VA Support"></div>
+            <div class="project-body"><h3>Customer Support Assistance for E-commerce Business</h3><p>Ticketing system for client satisfaction.</p></div>
+          </article>
+
+          <article class="project-card" tabindex="0" data-project="va4">
+            <div class="project-media"><img src="assets/VA1.jpg" alt="VA Data Entry"></div>
+            <div class="project-body"><h3>VA Project — Data Entry Automation</h3><p>Reliable automation of repetitive workflows.</p></div>
+          </article>
+          <!-- /project cards -->
+        </div>
+      </div>
+
+      <button class="carousel-btn next" aria-label="Next project">›</button>
+    </div>
+    <!-- END: carousel wrapper -->
+
+    <!-- Graphic Design Gallery -->
+    <div class="design-gallery">
+      <h3>Graphic Design Samples</h3>
+      <div class="design-grid">
+        <div class="design-card"><img src="assets/1 (1).png" alt="Graphic Design Sample 1" class="design-img"></div>
+        <div class="design-card"><img src="assets/2 (1).png" alt="Graphic Design Sample 2" class="design-img"></div>
+        <div class="design-card"><img src="assets/3.png" alt="Graphic Design Sample 3" class="design-img"></div>
+        <div class="design-card"><img src="assets/4.png" alt="Graphic Design Sample 4" class="design-img"></div>
+      </div>
+      <div class="view-all">
+        <a href="https://drive.google.com/drive/folders/1iWuANYupXghd9NqGLqmuJF1W1Qc-hwUl"
+           target="_blank" class="btn primary">🎨 View More Designs</a>
+      </div>
+    </div>
+
+
+
+
+  <!-- Modal -->
+<dialog id="project-modal" class="modal">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close modal">✕</button>
+    <h3 id="modal-title">Project Title</h3>
+    <p class="muted" id="modal-subtitle">Subtitle</p>
+    <div class="modal-grid">
+      <div class="modal-media"><img id="modal-img" src="" alt=""></div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+    <div class="modal-actions">
+      <a id="modal-link" class="btn primary" target="_blank" rel="noopener">🚀 Try it Live</a>
+    </div>
+  </div>
+</dialog>
+
+
+</section>
+
+
+  <!-- Achievements -->
+<section id="achievements" class="section reveal">
+  <div class="container">
+    <h2>Achievements & Certifications</h2>
+    <p class="muted">A collection of certifications, awards, and recognitions showcasing my expertise.</p>
+
+    <div class="grid achievements-grid">
+      <!-- Certificate 1 -->
+      <div class="achievement-card">
+        <img src="assets/grad1.jpg" alt="ALX Virtual Assistant" class="cert-img" data-pdf="assets/VA1.pdf">
+        <h3>Computer Science Graduate</h3>
+       
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="achievement-card">
+        <img src="assets/inter2.jpg" alt="Alison Graphic Designer" class="cert-img" data-pdf="assets/VA3.pdf">
+        <h3>Best International Student</h3>
+        
+      </div>
+
+      <!-- Certificate 4 -->
+      <div class="achievement-card">
+        <img src="assets/Outstanding.jpg" alt="ITIL Certification" class="cert-img" data-pdf="assets/VA4.pdf">
+        <h3>Most Outstanding Student of the year</h3>
+      </div>
+
+      
+      <!-- Certificate 2 -->
+      <div class="achievement-card">
+        <img src="assets/googl1.PNG" alt="Alison Virtual Assistant" class="cert-img" data-pdf="assets/VA2.pdf">
+        <h3>Google Technical Support</h3>
+      </div>
+
+      
+    </div>
+
+    <!-- NEW: View More button -->
+    <div class="view-all">
+      <a href="https://drive.google.com/drive/folders/1UTj1NoRfyup7xgCpsDp0ddk0z8FN3e7V?usp=sharing"
+         target="_blank"
+         class="btn primary">
+         📂 View More Achievements & Certificates
+      </a>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
+    <div class="container">
+      <h2>Let’s Work Together</h2>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Contact Details</h3>
+          <ul class="bullets">
+            <li><strong>Email:</strong> <a href="mailto:cndohoebana@gmail.com">cndohoebana@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+233555678007">+233 55 567 8007</a></li>
+          </ul>
+        </div>
+
+        <form class="card contact-form"
+              action="https://formspree.io/f/manbvgkn"
+              method="POST"
+              accept-charset="UTF-8">
+          <h3>Send a Message</h3>
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <input type="hidden" name="_captcha" value="false">
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="brand-foot">MANENTECH</p>
+        <p class="muted tiny">© <span id="year"></span> Designed by María Amparo</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/dashboard" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="mailto:cndohoebana@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
